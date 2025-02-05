@@ -8,14 +8,24 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    var coordinator : HomeCoordinator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+
     }
     
 
+    @IBAction func POP(_ sender: Any) {
+        print("pushScreen scree")
+        coordinator.showTestScrren()
+        
+    }
     /*
     // MARK: - Navigation
 

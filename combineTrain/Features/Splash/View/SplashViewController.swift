@@ -8,12 +8,16 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-
+    
+    var coordinator: SplashCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [weak self] in
+            self?.coordinator?.showHome()
+        }
     }
-
-
+    
+    
 }
 

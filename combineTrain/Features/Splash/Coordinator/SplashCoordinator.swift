@@ -17,10 +17,17 @@ class SplashCoordinator: Coordinator {
     }
     
     func start() {
-        let homeViewController = HomeViewController()
-        homeViewController.coordinator = self
-     //   homeViewController.inject(viewModel: homeViewModel)
-        navigationController.pushViewController(homeViewController, animated: true)
+        let splashViewController = SplashViewController()
+        splashViewController.coordinator = self
+        navigationController.pushViewController(splashViewController, animated: true)
     }
+    
+     func showHome() {
+         
+         let homeCoordinator = HomeCoordinator(navigationController: navigationController)
+         addChildCoordinator(homeCoordinator)
+         homeCoordinator.start()
+     }
+    
     
 }
