@@ -10,16 +10,26 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var coordinator : HomeCoordinator!
-    
+    @IBOutlet weak var topView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
+  
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-
+    
+    func setupUI() {
+        self.navigationController?.navigationBar.isHidden = true
+        topView.addVerticalGradient(topColor: UIColor.init(hex: "E6E6E6").withAlphaComponent(0), bottomColor: UIColor.init(hex: "FEFFBF").withAlphaComponent(1))
+        topView.applyCornerRadius(40, corners: [.bottomLeft , .bottomRight])
+        
     }
     
+    
+    
+  
+
 
     @IBAction func POP(_ sender: Any) {
         print("pushScreen scree")

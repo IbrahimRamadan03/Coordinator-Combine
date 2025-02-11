@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import Combine
+
+class SplashViewModel {
+    
+    @Published var isSplashFinished = false
+    
+    func startSplash() {
+        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
+            self.isSplashFinished = true
+        })
+    }
+    
+}
