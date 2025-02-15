@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCell" customModule="combineTrain" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="UEh-N1-GFm" customClass="MyCell" customModule="combineTrain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MVw-FY-4Jl">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="304-u7-ytV">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="gVu-UC-9R4">
+                                <rect key="frame" x="30" y="30" width="96" height="36"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gVu-UC-9R4" firstAttribute="top" secondItem="304-u7-ytV" secondAttribute="top" constant="30" id="Ye2-zA-Tym"/>
+                            <constraint firstAttribute="bottom" secondItem="gVu-UC-9R4" secondAttribute="bottom" constant="30" id="dAB-hS-cLi"/>
+                            <constraint firstItem="gVu-UC-9R4" firstAttribute="leading" secondItem="304-u7-ytV" secondAttribute="leading" constant="30" id="fVY-MK-zqe"/>
+                            <constraint firstAttribute="trailing" secondItem="gVu-UC-9R4" secondAttribute="trailing" constant="30" id="xBu-jO-nAI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="304-u7-ytV" secondAttribute="trailing" id="It3-YG-yZG"/>
+                    <constraint firstItem="304-u7-ytV" firstAttribute="leading" secondItem="MVw-FY-4Jl" secondAttribute="leading" id="fuV-Sc-9Q3"/>
+                    <constraint firstItem="304-u7-ytV" firstAttribute="top" secondItem="MVw-FY-4Jl" secondAttribute="top" id="ozb-Tk-Sch"/>
+                    <constraint firstAttribute="bottom" secondItem="304-u7-ytV" secondAttribute="bottom" id="xb3-rT-6Jr"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="65" height="77"/>
+            <connections>
+                <outlet property="mainView" destination="304-u7-ytV" id="rRs-dO-9cm"/>
+            </connections>
+            <point key="canvasLocation" x="174.04580152671755" y="-154.92957746478874"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon" width="32" height="27"/>
+    </resources>
+</document>
