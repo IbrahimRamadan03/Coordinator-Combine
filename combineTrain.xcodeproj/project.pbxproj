@@ -10,6 +10,11 @@
 		182D69832D5409D9008290E1 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D69822D5409D9008290E1 /* SplashViewModel.swift */; };
 		182D69862D541141008290E1 /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D69852D541141008290E1 /* TabBar.xib */; };
 		184F1E322D60DA1600D697BC /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F1E312D60DA1600D697BC /* MyCell.xib */; };
+		184F1E412D612B0D00D697BC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E402D612B0D00D697BC /* APIClient.swift */; };
+		184F1E432D612B7D00D697BC /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E422D612B7D00D697BC /* EndPoint.swift */; };
+		184F1E462D61374000D697BC /* HomeRepositary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E452D61374000D697BC /* HomeRepositary.swift */; };
+		184F1E482D61379F00D697BC /* Item_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E472D61379F00D697BC /* Item_Model.swift */; };
+		184F1E4A2D61380100D697BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E492D61380100D697BC /* HomeViewModel.swift */; };
 		1853AE372D4CE52E00F61259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853AE362D4CE52E00F61259 /* AppDelegate.swift */; };
 		1853AE392D4CE52E00F61259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853AE382D4CE52E00F61259 /* SceneDelegate.swift */; };
 		1853AE3B2D4CE52E00F61259 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853AE3A2D4CE52E00F61259 /* SplashViewController.swift */; };
@@ -35,6 +40,11 @@
 		182D69822D5409D9008290E1 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		182D69852D541141008290E1 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
 		184F1E312D60DA1600D697BC /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		184F1E402D612B0D00D697BC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		184F1E422D612B7D00D697BC /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		184F1E452D61374000D697BC /* HomeRepositary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositary.swift; sourceTree = "<group>"; };
+		184F1E472D61379F00D697BC /* Item_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item_Model.swift; sourceTree = "<group>"; };
+		184F1E492D61380100D697BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1853AE332D4CE52E00F61259 /* combineTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = combineTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1853AE362D4CE52E00F61259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1853AE382D4CE52E00F61259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +139,61 @@
 			path = cells;
 			sourceTree = "<group>";
 		};
+		184F1E3A2D612A5600D697BC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				184F1E3D2D612A7600D697BC /* coordinator */,
+				184F1E3C2D612A6900D697BC /* ViewModel */,
+				184F1E3B2D612A5D00D697BC /* view */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		184F1E3B2D612A5D00D697BC /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		184F1E3C2D612A6900D697BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		184F1E3D2D612A7600D697BC /* coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = coordinator;
+			sourceTree = "<group>";
+		};
+		184F1E3E2D612ACF00D697BC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				184F1E402D612B0D00D697BC /* APIClient.swift */,
+				184F1E422D612B7D00D697BC /* EndPoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		184F1E3F2D612AD900D697BC /* local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		184F1E442D6136D300D697BC /* Reposatories */ = {
+			isa = PBXGroup;
+			children = (
+				184F1E452D61374000D697BC /* HomeRepositary.swift */,
+			);
+			path = Reposatories;
+			sourceTree = "<group>";
+		};
 		1853AE2A2D4CE52E00F61259 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +237,7 @@
 		1853AE4B2D4CEB1D00F61259 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E3A2D612A5600D697BC /* Login */,
 				184F1E332D60ED7E00D697BC /* Settings */,
 				182D69842D541123008290E1 /* Tabbar */,
 				1853AE582D4CEC9E00F61259 /* Home */,
@@ -191,6 +257,8 @@
 		1853AE4D2D4CEB3000F61259 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E3F2D612AD900D697BC /* local */,
+				184F1E3E2D612ACF00D697BC /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -242,6 +310,7 @@
 		1853AE552D4CEC6000F61259 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E492D61380100D697BC /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +318,7 @@
 		1853AE562D4CEC6E00F61259 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E472D61379F00D697BC /* Item_Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +335,7 @@
 		1853AE582D4CEC9E00F61259 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E442D6136D300D697BC /* Reposatories */,
 				1853AE5C2D4CECDA00F61259 /* View */,
 				1853AE572D4CEC7E00F61259 /* Coordinator */,
 				1853AE562D4CEC6E00F61259 /* Model */,
@@ -390,12 +461,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F1E462D61374000D697BC /* HomeRepositary.swift in Sources */,
 				18E5CC702D5B9421007CB28E /* TabbsrCordinator.swift in Sources */,
 				1853AE5E2D4CECFF00F61259 /* HomeViewController.swift in Sources */,
+				184F1E4A2D61380100D697BC /* HomeViewModel.swift in Sources */,
 				1853AE6C2D4D049B00F61259 /* TestCoordinator.swift in Sources */,
+				184F1E412D612B0D00D697BC /* APIClient.swift in Sources */,
 				1853AE522D4CEBA400F61259 /* AppCoordinator.swift in Sources */,
+				184F1E432D612B7D00D697BC /* EndPoint.swift in Sources */,
 				18E5CC6E2D5B8BE2007CB28E /* Tabbar.swift in Sources */,
 				1853AE6A2D4D030500F61259 /* TestViewController.swift in Sources */,
+				184F1E482D61379F00D697BC /* Item_Model.swift in Sources */,
 				18F6E6BD2D5E5B2B00BBF85F /* MyCell.swift in Sources */,
 				1853AE3B2D4CE52E00F61259 /* SplashViewController.swift in Sources */,
 				182D69832D5409D9008290E1 /* SplashViewModel.swift in Sources */,

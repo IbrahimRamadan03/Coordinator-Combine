@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import Combine
+
+class HomeRepositary {
+    
+    private let apiClient : APIClient
+    
+    init(apiClient: APIClient) {
+        self.apiClient = apiClient
+    }
+    
+    func fetchItems()-> AnyPublisher <[Item] , Error> {
+        return apiClient.request(Endpoint.items)
+    }
+    
+}

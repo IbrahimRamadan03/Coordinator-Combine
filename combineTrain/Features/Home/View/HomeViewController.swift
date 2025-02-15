@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
   
     }
     
-    
     func setupUI() {
         collection.dataSource = self
         collection.delegate = self
@@ -33,9 +32,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func POP(_ sender: Any) {
-        print("pushScreen scree")
         coordinator.showTestScrren()
-        
     }
 
 
