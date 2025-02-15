@@ -24,7 +24,9 @@
                         <viewLayoutGuide key="safeArea" id="1gT-ns-li7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="5ub-T6-SqQ"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="5ub-T6-SqQ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <viewController id="1Gf-ig-t7d" customClass="TestViewController" customModule="combineTrain" customModuleProvider="target">
                     <view key="view" contentMode="scaleToFill" id="ynb-Ww-5vr">

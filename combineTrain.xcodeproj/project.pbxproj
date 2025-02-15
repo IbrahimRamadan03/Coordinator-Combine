@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		182D69832D5409D9008290E1 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D69822D5409D9008290E1 /* SplashViewModel.swift */; };
 		182D69862D541141008290E1 /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D69852D541141008290E1 /* TabBar.xib */; };
+		184F1E322D60DA1600D697BC /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F1E312D60DA1600D697BC /* MyCell.xib */; };
 		1853AE372D4CE52E00F61259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853AE362D4CE52E00F61259 /* AppDelegate.swift */; };
 		1853AE392D4CE52E00F61259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853AE382D4CE52E00F61259 /* SceneDelegate.swift */; };
 		1853AE3B2D4CE52E00F61259 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853AE3A2D4CE52E00F61259 /* SplashViewController.swift */; };
@@ -27,11 +28,13 @@
 		18E5CC702D5B9421007CB28E /* TabbsrCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CC6F2D5B9421007CB28E /* TabbsrCordinator.swift */; };
 		18E5CC732D5BAA3C007CB28E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CC722D5BAA3C007CB28E /* UIColor.swift */; };
 		18E5CC752D5BAA79007CB28E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5CC742D5BAA79007CB28E /* UIView.swift */; };
+		18F6E6BD2D5E5B2B00BBF85F /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6E6BC2D5E5B2B00BBF85F /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		182D69822D5409D9008290E1 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		182D69852D541141008290E1 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
+		184F1E312D60DA1600D697BC /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		1853AE332D4CE52E00F61259 /* combineTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = combineTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1853AE362D4CE52E00F61259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1853AE382D4CE52E00F61259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		18E5CC6F2D5B9421007CB28E /* TabbsrCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbsrCordinator.swift; sourceTree = "<group>"; };
 		18E5CC722D5BAA3C007CB28E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		18E5CC742D5BAA79007CB28E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		18F6E6BC2D5E5B2B00BBF85F /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,56 @@
 				18E5CC6F2D5B9421007CB28E /* TabbsrCordinator.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		184F1E332D60ED7E00D697BC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				184F1E382D60EE0100D697BC /* Coordinator */,
+				184F1E372D60EDE000D697BC /* Model */,
+				184F1E362D60EDD700D697BC /* ViewModel */,
+				184F1E352D60EDD000D697BC /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		184F1E352D60EDD000D697BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1853AE692D4D030500F61259 /* TestViewController.swift */,
+				1853AE672D4D02F300F61259 /* TestView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184F1E362D60EDD700D697BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		184F1E372D60EDE000D697BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184F1E382D60EE0100D697BC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		184F1E392D60EE3B00D697BC /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				184F1E312D60DA1600D697BC /* MyCell.xib */,
+				18F6E6BC2D5E5B2B00BBF85F /* MyCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		1853AE2A2D4CE52E00F61259 = {
@@ -118,6 +172,7 @@
 		1853AE4B2D4CEB1D00F61259 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E332D60ED7E00D697BC /* Settings */,
 				182D69842D541123008290E1 /* Tabbar */,
 				1853AE582D4CEC9E00F61259 /* Home */,
 				1853AE532D4CEC2700F61259 /* Splash */,
@@ -244,10 +299,9 @@
 		1853AE5C2D4CECDA00F61259 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184F1E392D60EE3B00D697BC /* cells */,
 				1853AE652D4D012400F61259 /* HomeView.xib */,
 				1853AE5D2D4CECFF00F61259 /* HomeViewController.swift */,
-				1853AE672D4D02F300F61259 /* TestView.xib */,
-				1853AE692D4D030500F61259 /* TestViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +377,7 @@
 				1853AE662D4D012400F61259 /* HomeView.xib in Resources */,
 				1853AE602D4CED1B00F61259 /* SplashView.xib in Resources */,
 				1853AE682D4D02F300F61259 /* TestView.xib in Resources */,
+				184F1E322D60DA1600D697BC /* MyCell.xib in Resources */,
 				1853AE432D4CE52F00F61259 /* Base in Resources */,
 				182D69862D541141008290E1 /* TabBar.xib in Resources */,
 			);
@@ -341,6 +396,7 @@
 				1853AE522D4CEBA400F61259 /* AppCoordinator.swift in Sources */,
 				18E5CC6E2D5B8BE2007CB28E /* Tabbar.swift in Sources */,
 				1853AE6A2D4D030500F61259 /* TestViewController.swift in Sources */,
+				18F6E6BD2D5E5B2B00BBF85F /* MyCell.swift in Sources */,
 				1853AE3B2D4CE52E00F61259 /* SplashViewController.swift in Sources */,
 				182D69832D5409D9008290E1 /* SplashViewModel.swift in Sources */,
 				1853AE622D4CF14500F61259 /* SplashCoordinator.swift in Sources */,

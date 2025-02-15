@@ -18,6 +18,7 @@ class TestViewController: UIViewController {
     
     
     @IBAction func gotToRoot(_ sender: Any) {
+        navigationController?.tabBarController?.selectedIndex = 0
         
     }
     
