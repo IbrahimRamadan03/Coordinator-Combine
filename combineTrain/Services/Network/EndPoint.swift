@@ -1,17 +1,8 @@
-//
-//  EndPoint.swift
-//  combineTrain
-//
-//  Created by Apple on 15/02/2025.
-//
-
-import Foundation
-
-// MARK: - Endpoint
-
 enum Endpoint {
+    
     case items
     case itemDetails(id: Int)
+    case login
     
     var baseURL: String {
         return "https://api.example.com"
@@ -23,6 +14,8 @@ enum Endpoint {
             return "/items"
         case .itemDetails(let id):
             return "/items/\(id)"
+        case .login :
+        return "login"
         }
     }
     
@@ -30,18 +23,11 @@ enum Endpoint {
         switch self {
         case .items, .itemDetails:
             return "GET"
+        case .login :
+        return "POST"
         }
     }
-    
-    var urlRequest: URLRequest? {
-        guard let url = URL(string: baseURL + path) else { return nil }
-        var request = URLRequest(url: url)
-        request.httpMethod = method
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        return request
-    }
 }
-
 
 // MARK: - APIError
 enum APIError: Error {

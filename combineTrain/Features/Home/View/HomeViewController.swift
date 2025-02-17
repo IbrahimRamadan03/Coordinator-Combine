@@ -17,7 +17,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-  
     }
     
     func setupUI() {
@@ -28,7 +27,6 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         topView.addVerticalGradient(topColor: UIColor.init(hex: "E6E6E6").withAlphaComponent(0), bottomColor: UIColor.init(hex: "FEFFBF").withAlphaComponent(1))
         topView.applyCornerRadius(40, corners: [.bottomLeft , .bottomRight])
-        
     }
     
     @IBAction func POP(_ sender: Any) {
@@ -38,7 +36,7 @@ class HomeViewController: UIViewController {
 
 }
 
-extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
+  extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -60,7 +58,7 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
            let width = (collectionView.frame.width - 20) / 3
-        let height = collectionView.frame.height
+           let height = collectionView.frame.height
            return CGSize(width: width, height: height)
        }
     

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		182D69832D5409D9008290E1 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D69822D5409D9008290E1 /* SplashViewModel.swift */; };
 		182D69862D541141008290E1 /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D69852D541141008290E1 /* TabBar.xib */; };
+		1846D2BC2D63852E00AF5332 /* LoginRepositary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846D2BB2D63852E00AF5332 /* LoginRepositary.swift */; };
+		1846D2BF2D63858800AF5332 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846D2BE2D63858800AF5332 /* LoginModel.swift */; };
+		1846D2C22D638A9500AF5332 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846D2C12D638A9500AF5332 /* DataMapper.swift */; };
 		184F1E322D60DA1600D697BC /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F1E312D60DA1600D697BC /* MyCell.xib */; };
 		184F1E412D612B0D00D697BC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E402D612B0D00D697BC /* APIClient.swift */; };
 		184F1E432D612B7D00D697BC /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F1E422D612B7D00D697BC /* EndPoint.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		182D69822D5409D9008290E1 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		182D69852D541141008290E1 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
+		1846D2BB2D63852E00AF5332 /* LoginRepositary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositary.swift; sourceTree = "<group>"; };
+		1846D2BE2D63858800AF5332 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1846D2C12D638A9500AF5332 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		184F1E312D60DA1600D697BC /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		184F1E402D612B0D00D697BC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		184F1E422D612B7D00D697BC /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -87,6 +93,30 @@
 				18E5CC6F2D5B9421007CB28E /* TabbsrCordinator.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1846D2BA2D63850C00AF5332 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1846D2BB2D63852E00AF5332 /* LoginRepositary.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1846D2BD2D63857800AF5332 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1846D2BE2D63858800AF5332 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1846D2C02D638A8600AF5332 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1846D2C12D638A9500AF5332 /* DataMapper.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		184F1E332D60ED7E00D697BC /* Settings */ = {
@@ -142,6 +172,8 @@
 		184F1E3A2D612A5600D697BC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1846D2BD2D63857800AF5332 /* Model */,
+				1846D2BA2D63850C00AF5332 /* Repository */,
 				184F1E3D2D612A7600D697BC /* coordinator */,
 				184F1E3C2D612A6900D697BC /* ViewModel */,
 				184F1E3B2D612A5D00D697BC /* view */,
@@ -249,6 +281,7 @@
 		1853AE4C2D4CEB2800F61259 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1846D2C02D638A8600AF5332 /* Util */,
 				18E5CC712D5BAA24007CB28E /* Extentions */,
 			);
 			path = Common;
@@ -462,8 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				184F1E462D61374000D697BC /* HomeRepositary.swift in Sources */,
+				1846D2C22D638A9500AF5332 /* DataMapper.swift in Sources */,
 				18E5CC702D5B9421007CB28E /* TabbsrCordinator.swift in Sources */,
 				1853AE5E2D4CECFF00F61259 /* HomeViewController.swift in Sources */,
+				1846D2BF2D63858800AF5332 /* LoginModel.swift in Sources */,
 				184F1E4A2D61380100D697BC /* HomeViewModel.swift in Sources */,
 				1853AE6C2D4D049B00F61259 /* TestCoordinator.swift in Sources */,
 				184F1E412D612B0D00D697BC /* APIClient.swift in Sources */,
@@ -473,6 +508,7 @@
 				1853AE6A2D4D030500F61259 /* TestViewController.swift in Sources */,
 				184F1E482D61379F00D697BC /* Item_Model.swift in Sources */,
 				18F6E6BD2D5E5B2B00BBF85F /* MyCell.swift in Sources */,
+				1846D2BC2D63852E00AF5332 /* LoginRepositary.swift in Sources */,
 				1853AE3B2D4CE52E00F61259 /* SplashViewController.swift in Sources */,
 				182D69832D5409D9008290E1 /* SplashViewModel.swift in Sources */,
 				1853AE622D4CF14500F61259 /* SplashCoordinator.swift in Sources */,

@@ -1,8 +1,9 @@
-//
-//  LoginModel.swift
-//  combineTrain
-//
-//  Created by Apple on 17/02/2025.
-//
+struct LoginModel: Codable {
+    let name: String
+    let id: Int
+}
 
-import Foundation
+struct LoginRequestModel: Codable {
+    let username: String
+    let password: String
+}

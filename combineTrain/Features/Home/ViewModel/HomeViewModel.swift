@@ -15,7 +15,7 @@ class HomeViewModel {
     @Published var isLoading : Bool = false
     private let repositary : HomeRepositary
     private var cancellables = Set<AnyCancellable>()
-
+    
     
     init(repositary: HomeRepositary) {
         self.repositary = repositary
@@ -30,6 +30,7 @@ class HomeViewModel {
                 }
             } receiveValue: { [weak self] items in
                 self?.items = items
+                
             }
             .store(in: &cancellables)
     }
